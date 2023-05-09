@@ -42,10 +42,10 @@ contents = doc.select("section > p")  # section 태그 안에 있는 p 태그들
 
 print("=" * 100)
 print(f"뉴스제목: {title}")
+print("=" * 100)
 
 content = ""  # 전체 본문을 담을 변수
 contents.pop(-1)
 for tag in contents:
     content = content + tag.get_text()
 print(f"뉴스본문:{content}")
-print("=" * 100)
