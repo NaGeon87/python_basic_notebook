@@ -49,3 +49,7 @@ contents.pop(-1)
 for tag in contents:
     content = content + tag.get_text()
 print(f"뉴스본문:{content}")
+
+for i, title in enumerate(tile_list):
+    new_url = title["href"]  # 해당 기사의 URL만 추출
+    print(url)
